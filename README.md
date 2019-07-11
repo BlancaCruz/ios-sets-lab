@@ -1,4 +1,4 @@
-# Sets lab
+# Sets lab Thurs 7-11-19, Blanca Cruz
 
 Fork and clone this repo. On your fork, answer and commit the follow questions. When you are finished, submit the link to your repo on Canvas.
 
@@ -12,6 +12,18 @@ Input: heights of trees below:
 
 Output:
 `169.375`
+
+```swift
+let heightOfTrees = Set([161, 182, 161, 154, 176, 170, 167, 171, 170, 174])
+var sum = 0
+
+for i in heightOfTrees{
+sum += i
+}
+
+var average: Double = Double(sum)/Double(heightOfTrees.count)
+print(average)
+```
 
 
 ## Question 2
