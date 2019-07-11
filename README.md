@@ -33,6 +33,26 @@ Determine if a String is a pangram. A pangram is a string that contains every le
  e.g `"The quick brown fox jumps over the lazy dog"` is a pangram
  e.g `"The quick brown fox jumped over the lazy dog"` is NOT a pangram
 
+```swift
+var alphabet = Set("abcdefghijklmnopqrstuvwxyz")
+
+var testIt = "The quick brown fox jumps over the lazy dog"
+//var test = "The quick brown fox jumped over the lazy dog"
+
+for char in testIt.lowercased(){
+alphabet.remove(char)
+}
+
+//Removing the letters (in the sentence above) from the alphabet set when enumerating it in the string. The 2nd sentence has "jumped" with letters "e" and "d" repeated twice.
+
+if alphabet.isEmpty{
+print("\"\(testIt)\" it is a pangram") }
+
+else {
+print("\"\(testIt)\" it is not a pangram")
+}
+```
+
 
 ## Question 3
 
