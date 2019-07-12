@@ -82,13 +82,6 @@ let arr1 = [2, 4, 5, 6, 8, 10, 12]
 let arr2 = [1, 2, 3, 4, 5, 6]
 let arr3 = [5, 6, 7, 8, 9, 10, 11, 12]
 let arr4 = [1, 3, 4, 5, 6, 7, 9]
-```
-
-```swift
-let arr1 = [2, 4, 5, 6, 8, 10, 12]
-let arr2 = [1, 2, 3, 4, 5, 6]
-let arr3 = [5, 6, 7, 8, 9, 10, 11, 12]
-let arr4 = [1, 3, 4, 5, 6, 7, 9]
 
 var arrOfArrays = [arr1 + arr2 + arr3 + arr4]
 var finalAnswer = [Int]()
@@ -113,6 +106,21 @@ Perform the following set operations on the lists below:
 ```swift
 let list1: Set = [1, 3, 4, 6, 2, 7, 9]
 let list2: Set = [3, 7, 13, 10, 4]
+
+//union combines all elements and does not add in duplicative values
+print(list1.union(list2))
+
+
+//Intersection shows where the two sets have the same value
+let setIntersection = list1.intersection(list2)
+print(setIntersection)
+
+
+//Difference --> union minus interseciton
+let setDifference = list1.symmetricDifference(list2)
+print(setDifference)
+
+let setSubtracting = list1.subtracting(list2)
 ```
 
 
