@@ -84,6 +84,22 @@ let arr3 = [5, 6, 7, 8, 9, 10, 11, 12]
 let arr4 = [1, 3, 4, 5, 6, 7, 9]
 ```
 
+```swift
+let arr1 = [2, 4, 5, 6, 8, 10, 12]
+let arr2 = [1, 2, 3, 4, 5, 6]
+let arr3 = [5, 6, 7, 8, 9, 10, 11, 12]
+let arr4 = [1, 3, 4, 5, 6, 7, 9]
+
+var arrOfArrays = [arr1 + arr2 + arr3 + arr4]
+var finalAnswer = [Int]()
+var arrOfSets: Set<Int> = []
+for numbers in arrOfArrays {
+arrOfSets = Set(numbers)
+}
+finalAnswer = Array(arrOfSets).sorted()
+print(finalAnswer)
+```
+
 
 ## Question 5
 
